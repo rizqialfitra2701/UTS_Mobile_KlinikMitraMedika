@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#0F172A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="32dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="12dp"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_lock_lock"
+            android:layout_marginBottom="16dp"
+            app:tint="#0F172A" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Administrator"
+            android:textColor="#0F172A"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Klinik Mitra Medika"
+            android:textColor="#64748B"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Username"
+            android:textColor="#1E293B"
+            android:textColorHint="#94A3B8"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#F1F5F9"
+            android:paddingHorizontal="16dp"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:drawablePadding="12dp"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Password"
+            android:textColor="#1E293B"
+            android:textColorHint="#94A3B8"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#F1F5F9"
+            android:paddingHorizontal="16dp"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+            android:drawablePadding="12dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="28dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="LOGIN SISTEM"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0F172A"
+            android:letterSpacing="0.05"
+            app:cornerRadius="12dp"
+            android:elevation="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lupa password? Hubungi IT Support"
+            android:textColor="#94A3B8"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</RelativeLayout>
